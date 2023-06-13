@@ -1,0 +1,186 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 28px;
+}
+
+header h1 {
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 600px;
+    width: 700px;
+    padding: 15px;
+    position: relative;
+}
+
+.container .box ul li {
+    background-color: #ffffffe5;
+    border-radius: 4px;
+    width: 500px;
+    height: 65px;
+    margin: 30px;
+}
+
+.container .box ul.menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 600px;
+    width: 600px;
+    padding: 15px;
+    position: relative;
+}
+
+.container .box a {
+    color: #000000;
+}
+
+.container .box ul.menu li {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffffe5;
+    border-radius: 4px;
+    width: 400px;
+    height: 65px;
+    margin: 15px;
+    position: relative;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.container .box ul.menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.container .box ul.menu li:hover .submenu {
+    display: block;
+}
+
+.container .box ul.menu li .submenu {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 999;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .box ul.menu li:hover .submenu {
+    opacity: 1;
+    transform: translateY(0);
+    min-width: 100%;
+}
+
+.container .box ul.menu li .submenu:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #5f1010 transparent;
+}
+
+.container .box ul.menu li .submenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.container .box ul.menu li .submenu li {
+    margin: 5px 0;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .box ul.menu li .submenu li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .box ul.menu li .submenu li a:hover {
+    color: #17063b;
+}
+
+.container .box ul.menu li .submenu:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.container .btn {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+
+.container .btn a {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.judul {
+    background-color: #7f6ea3;
+    border-radius: 25px;
+    padding: 10px 40px;
+    color: black;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.container img {
+    width: 150px;
+}

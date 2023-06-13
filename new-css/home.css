@@ -1,0 +1,63 @@
+.container-home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 42px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+}
+
+.menu h1 a {
+    font-size: 60px;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+}
+  
+  .menu button {
+    padding: 20px;
+    background-color: #302c68;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px;
+  }
+  
+button a {
+    color: white;
+}
+
+
+footer {
+    position: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    bottom: 10px;
+    width: 100vw; padding: 5px 20px;
+}
+
+footer .kiri {
+    display: flex;
+    gap: 10px;
+}
+
+
+footer .kiri a,
+footer .kanan a {
+    color: #fff;
+    font-size: 18px;
+}

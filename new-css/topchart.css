@@ -1,0 +1,93 @@
+body{
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 28px;
+}
+
+header h1 {
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
+.container-topchart{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-topchart .box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    width: 700px;
+    position: relative;
+    gap: 20px 50px;
+    font-size: 18px;
+}
+
+.container-topchart .box ul li {
+    background-color: #ffffffe5;
+    border-radius: 25px;
+    padding: 30px 90px;
+}
+
+.container-topchart .box ul li a {
+    color: black;
+}
+
+
+.container-topchart .btn {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+
+.container-topchart .btn a {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.container-topchart .box ul li:nth-child(1){
+padding: 40px 80px;
+}
+.container-topchart .box ul li:nth-child(3){
+    padding: 30px 85px;
+}
+
+.judul {
+    background-color: #7f6ea3;
+    border-radius: 25px;
+    padding: 10px 40px;
+    color: black;
+    font-weight: bold;
+    font-size: 48px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.container-topchart img {
+    width: 130px;
+}
+
+.container .btn {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+
+.container .btn a {
+    color: #ffffff;
+    font-size: 25px;
+}

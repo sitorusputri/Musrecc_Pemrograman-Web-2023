@@ -1,0 +1,72 @@
+.container-team {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-team .team {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.nim {
+    font-size: 18px;
+    color: #999;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button {
+    background-color: #302c68;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button a{
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+
+.btn a {
+    color: #ffffff;
+    font-size: 25px;
+}
